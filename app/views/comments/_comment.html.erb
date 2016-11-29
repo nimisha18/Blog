@@ -1,0 +1,14 @@
+<p>
+  <strong>Commenter:</strong>
+  <%= comment.commenter %>
+</p>
+ 
+<p>
+  <strong>Comment:</strong>
+  <%= comment.body %>
+</p>
+ 
+<p>
+  <%= link_to 'Destroy Comment', article_comment_path(id: comment.id, article_id: comment.article_id),
+               method: :delete %>
+</p>
